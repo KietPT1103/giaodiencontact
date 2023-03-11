@@ -204,6 +204,11 @@ body {
     border: 1px solid #D3DFE4 !important;
 }
 
+#contact_us-card .content-contact textarea{
+    resize: none;
+}
+
+
 /* contact question */
 .contact-question .sub-question {
     margin-bottom: 40px;
