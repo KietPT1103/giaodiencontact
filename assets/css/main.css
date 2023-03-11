@@ -1,0 +1,286 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    color: #222;
+    font-size: 16px !important;
+    line-height: 32px !important;
+    font-family: 'neue-haas-unica', 'kozuka-gothic-pro', sans-serif !important;
+    font-style: normal !important;
+    font-weight: 500 !important;
+    letter-spacing: 0.04em !important;
+}
+
+#main .main-container {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#content {
+    position: relative;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content .tittle {
+    line-height: 58px;
+    font-size: 39px;
+}
+
+#content .tittle-blue {
+    color: #0000F6;
+    letter-spacing: -1px;
+    font-weight: 700;
+}
+
+#content .desc {
+    margin: 84px 0;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+#content .desc p {
+    margin-bottom: 10px;
+    letter-spacing: 0.1px;
+
+}
+
+#breadcrum {
+    margin-bottom: 30px;
+}
+
+#breadcrum .tab-breadcrum {
+    display: flex;
+    align-items: center;
+    color: #819EAB;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+    font-feature-settings: 'palt' on;
+    margin-top: -26px;
+}
+
+#breadcrum .tab-selected {
+    margin-left: 0;
+    padding-bottom: 7px;
+    font-weight: 700;
+    font-feature-settings: 'palt' on, 'pwid' on;
+    box-shadow: 0 3px;
+    color: #000000;
+}
+
+#breadcrum li {
+    margin: 17px;
+}
+
+#contact_us-card .contact-form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+
+.contact-form label {
+    display: inline-block;
+    max-width: 100%;
+    width: 100%;
+    color: #000000;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 30px;
+    letter-spacing: 0.1em;
+    font-feature-settings: 'palt' on;
+    padding-right: 24px;
+    font-weight: 600;
+}
+
+.contact-form .agree-custom {
+    margin-bottom: 28px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-left: 262px;
+}
+
+.contact-form .custom-control {
+    padding: 0;
+    position: relative;
+    display: block;
+    min-height: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.contact-form .custom-control input {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 0.1rem;
+    left: -1.5rem;
+    display: block;
+    content: "";
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+
+    margin-left: 24px;
+}
+
+.contact-form .custom-control-label {
+    padding-left: 15px;
+    margin-bottom: 0;
+    vertical-align: top;
+    bottom: 5px;
+    line-height: 27px;
+    letter-spacing: 1.2px;
+}
+
+#contact_us-card .contact-form textarea {
+    min-height: 360px;
+    width: 100%;
+    height: auto;
+    font-size: 1em;
+    height: 48px;
+    background: #FFFFFF;
+    border: 1px solid #D3DFE4;
+    border-radius: 4px;
+    line-height: 24px;
+    padding: 16px;
+    font-style: normal;
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    font-feature-settings: 'palt' on;
+    color: #000000;
+    font-family: 'kozuka-gothic-pro' !important;
+    font-weight: 500;
+    margin-top: 0;
+}
+
+#contact_us-card .require-note {
+    color: #0B5AE4;
+    font-size: 12px;
+}
+
+#contact_us-card .row-contact {
+    display: grid;
+    grid-template-columns: 262px calc(100% - 262px);
+    align-items: baseline;
+}
+
+#contact_us-card .target-content {
+    margin: 0;
+    box-shadow: none;
+}
+
+#contact_us-card .target-content .btn:hover {
+    border: 1px solid #6ec3ee !important;
+}
+
+#contact_us-card .target-content .btn {
+    display: block;
+    padding: 11px 13px 15px 16px;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 27px;
+    border-radius: 5px;
+    position: relative;
+    text-align: left;
+    width: 100%;
+    background-color: transparent;
+    color: #000000;
+    height: 48px;
+    font-weight: 600 !important;
+    font-family: 'kozuka-gothic-pro' !important;
+    cursor: pointer;
+    border: 1px solid #D3DFE4 !important;
+}
+
+/* contact question */
+.contact-question .sub-question {
+    margin-bottom: 40px;
+}
+
+.contact-question {
+    display: none;
+}
+
+#contact_us-card .form-control {
+    height: 56px;
+    background: #FFFFFF;
+    border: 1px solid #D3DFE4;
+    border-radius: 4px;
+    line-height: 24px;
+    padding: 16px;
+    font-style: normal;
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    font-feature-settings: 'palt' on;
+    color: #000000;
+    font-weight: 500;
+    position: relative;
+    width: 100%;
+}
+
+#contact_us-card .ur_name {
+    display: grid;
+    grid-template-columns: calc(50% - 12px) calc(50% - 12px);
+    grid-gap: 24px;
+    border-color: #6ec3ee;
+    box-shadow: none;
+    margin-bottom: 0 !important;
+}
+
+#contact_us-card .custom-control-label a {
+    color: #0B5AE4;
+}
+
+#contact_us-card .row-captcha {
+    margin-top: -40px;
+    width: 100%;
+}
+
+#contact_us-card .g-recaptcha {
+    padding-left: 262px;
+}
+
+.contact-form .form-submit {
+    align-items: flex-end;
+    text-align: center;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.row-button .submit-btn {
+    font-family: neue-haas-unica, kozuka-gothic-pro, sans-serif !important;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 8px;
+    width: 144px;
+    height: 64px;
+    border: 2px solid #0B5AE4;
+    border-radius: 32px;
+    color: #000000;
+    padding: 0 14px 0 22px;
+    font-weight: 700;
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .2s ease-out;
+    background-color: #fff;
+}
+
+.row-button .submit-btn:hover {
+    background: linear-gradient(to right, #0B5AE4 100%, #fff 50%);
+    color: #fff;
+}

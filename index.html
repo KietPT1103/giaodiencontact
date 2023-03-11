@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css">
+</head>
+
+<body>
+    <div id="main">
+        <div class="main-container">
+
+
+            <div id="content">
+                <div class="tittle">
+                    <h2 class="main-tittle">
+                        お問い合わせ
+                    </h2>
+                    <h2 class="tittle-blue">
+                        Contact
+                    </h2>
+                </div>
+
+                <div class="desc">
+                    <p>
+                        案件のご相談や開発・DX推進についてなど、お気軽にお問い合わせください。
+                    </p>
+                    <p>
+                        確認の上、担当者よりご連絡いたします。お時間を頂くことがございますが、予めご了承ください。
+                    </p>
+                </div>
+
+                <div id="breadcrum">
+                    <ul class="tab-breadcrum">
+                        <li class="tab-selected">
+                            入力
+                        </li>
+                        <i class="ti-angle-right"></i>
+                        <li>確認</li>
+                        <i class="ti-angle-right"></i>
+                        <li>完了</li>
+                    </ul>
+                </div>
+
+                <div id="contact_us-card">
+                    <form class="contact-form">
+                        <div class="row-contact">
+                            <label for="target-open">
+                                お問い合わせの種別
+                                <span class="require-note">※必須</span>
+                            </label>
+                            <div class="target-content">
+                                <select onchange="myFunction()" id="contact-choice" class="form-control" required>
+                                    <option value="" selected disabled>選択してください</option>
+                                    <option value="opt-1">1. DX支援（新規事業の企画、立ち上げ支援）のご相談</option>
+                                    <option value="opt-2">2. 基幹システム開発のご相談</option>
+                                    <option value="opt-3">3. WEBアプリケーション開発のご相談</option>
+                                    <option value="opt-4">4. WEBアプリ・ネイティブアプリ開発のご相談</option>
+                                    <option value="opt-5">5. Hybrid Technologies Capital(投資＋開発）のご相談</option>
+                                    <option value="opt-6">6. 採用についてのお問い合わせ</option>
+                                    <option value="opt-7">7. 広報・取材のお問い合わせ</option>
+                                    <option value="opt-8">8. 当社とのM＆A、業務提携、資本提携のお問い合わせ</option>
+                                    <option value="opt-9">9. 当社IRについてのお問い合わせ</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="question-container">
+                            <div class="contact-question  js-question-1">
+                                <div class="row-contact sub-question">
+                                    <label for="question">
+                                        DXのご経験について
+                                        <span class="require-note">※必須</span>
+                                    </label>
+                                    <div class="answer">
+                                        <label><input type="radio" name="first-option-1" value="1" required>
+                                            今回が初めて</label>
+                                        <label><input type="radio" name="first-option-1" value="2">
+                                            日常的に取り組んでいる</label>
+                                    </div>
+                                </div>
+
+                                <div class="row-contact sub-question">
+                                    <label for="question">
+                                        御社の推進体制について
+                                        <span class="require-note">※必須</span>
+                                    </label>
+                                    <div class="answer">
+                                        <label><input type="radio" name="first-option-2" value="1">
+                                            整っていない</label>
+                                        <label><input type="radio" name="first-option-2" value="2">
+                                            ある程度整っているが潤沢ではない</label>
+                                        <label><input type="radio" name="first-option-2" value="3">
+                                            整っている</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contact-question  js-question-2">
+                                <div class="row-contact sub-question">
+                                    <label for="question">
+                                        開発ご予算（単位：万円）
+                                        <span class="require-note">※必須</span>
+                                    </label>
+                                    <div class="answer">
+                                        <label><input type="radio" name="sec-option-1" value="1" required>
+                                            ~500</label>
+                                        <label><input type="radio" name="sec-option-1" value="1"> 501~1000
+                                        </label>
+                                        <label><input type="radio" name="sec-option-1" value="3">
+                                            1001~2000</label>
+                                        <label><input type="radio" name="sec-option-1" value="4">
+                                            3001~5000</label>
+                                        <label><input type="radio" name="sec-option-1" value="5">
+                                            5001~10000</label>
+                                        <label><input type="radio" name="sec-option-1" value="6">
+                                            10001~</label>
+                                    </div>
+                                </div>
+
+                                <div class="row-contact sub-question">
+                                    <label for="question">
+                                        プロジェクトの開始時期
+                                        <span class="require-note">※必須</span>
+                                    </label>
+                                    <div class="answer">
+                                        <label><input type="radio" name="sec-option-2" value="1" required>
+                                            すぐにでも</label>
+                                        <label><input type="radio" name="sec-option-2" value="2">
+                                            3ヶ月以内</label>
+                                        <label><input type="radio" name="sec-option-2" value="3">
+                                            半年以内</label>
+                                        <label><input type="radio" name="sec-option-2" value="4">
+                                            １年以内</label>
+                                        <label><input type="radio" name="sec-option-2" value="5">
+                                            明確な時期は決まっていない</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contact-question  js-question-5">
+                                <div class="row-contact sub-question">
+                                    <label for="question">
+                                        現状のステータス
+                                        <span class="require-note">※必須</span>
+                                    </label>
+                                    <div class="answer">
+                                        <label><input type="radio" name="Fifth-option-1" value="1" required>
+                                            シード期（※事業アイデアはあるが起業前後）</label>
+                                        <label><input type="radio" name="Fifth-option-1" value="2">
+                                            アーリーステージ期 (※PMFの達成から一定の収益化ができているタイミング) </label>
+                                        <label><input type="radio" name="Fifth-option-1" value="3">
+                                            ミドルステータス期（※安定した収益を得ており、事業拡大を見込むことができるタイミング）</label>
+                                        <label><input type="radio" name="Fifth-option-1" value="4">
+                                            レイターステージ期（※事業成長が軌道に乗り、拡大路線のタイミング）</label>
+                                    </div>
+                                </div>
+
+                                <div class="row-contact sub-question">
+                                    <label for="question">
+                                        当社開発サービスについて
+                                        <span class="require-note">※必須</span>
+                                    </label>
+                                    <div class="answer">
+                                        <label><input type="radio" name="Fifth-option-2" value="1" required>
+                                            興味あり</label>
+                                        <label><input type="radio" name="Fifth-option-2" value="2">
+                                            興味なし</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row-contact">
+                            <label for="Company">
+                                会社名
+                                <span class="require-note">※必須</span>
+                            </label>
+                            <div>
+                                <input id="require-note" class="form-control" type="text" required
+                                    placeholder="株式会社ハイブリッドテクノロジーズ">
+                            </div>
+                        </div>
+                        <div class="row-contact">
+                            <label for="department">
+                                部署名
+                            </label>
+                            <div>
+                                <input id="department" class="form-control" type="text" required
+                                    placeholder="ビジネスコンサルティング部">
+                            </div>
+                        </div>
+                        <div class="row-contact">
+                            <label for="ur_name">
+                                お名前
+                                <span class="require-note">※必須</span>
+                            </label>
+
+                            <div class="ur_name">
+                                <div>
+                                    <input id="ur_name" class="form-control" type="text" required placeholder="田中">
+                                </div>
+                                <div>
+                                    <input id="ur_name" class="form-control" type="text" required placeholder="太郎">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row-contact">
+                            <label for="email">
+                                メールアドレス
+                                <span class="require-note">※必須</span>
+                            </label>
+
+                            <div class="email">
+                                <input id="email" class="form-control" type="email" required
+                                    placeholder="sample@sample.com">
+                            </div>
+                        </div>
+                        <div class="row-contact">
+                            <label for="tel">電話番号</label>
+
+                            <div class="tel">
+                                <input id="tel" class="form-control" type="tel" inputmode="numeric" pattern="[0-9]*"
+                                    maxlength="50" name="tel" placeholder="0312345678">
+                            </div>
+                        </div>
+                        <div class="row-contact" style="align-items:unset;">
+                            <label for="content">お問い合わせ内容
+                                <span class="require-note">※必須</span>
+                            </label>
+
+                            <div class="content-contact">
+                                <textarea maxlength="1000" name="content" id="content-contact" required
+                                    spellcheck="false" placeholder="お問い合わせ内容を記載してください。"></textarea>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="agree-custom">
+                                <div class="custom-control">
+                                    <input class="custom-control-input" id="agree" name="agree" required type="checkbox"
+                                        aria-required="true">
+                                    <label class="custom-control-label" for="agree">
+                                        <a class="agree-policy" href="https://hybrid-technologies.co.jp/privacy-policy/"
+                                            target="_blank" title="プライバシーポリシーを確認の上、同意します。" rel="noopener">プライバシーポリシー</a>
+                                        <span>を確認の上、同意します。</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row-captcha">
+                            <div id="recaptcha" class="g-recaptcha"
+                                data-sitekey="6Lf_Te0kAAAAAIYDyCtLozOgPX9dx1xHuyq7u1ug"></div>
+
+                        </div>
+                        <div class="row-button">
+                            <div class="form-submit">
+                                <button class="submit-btn">
+                                    <span class="change-text">
+                                        確認する
+                                    </span>
+                                    <span class="arr-icon"><i class="ti-arrow-right"></i></span>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function myFunction() {
+            var selectValue = document.getElementById("contact-choice").value;
+            var question1 = document.querySelector(".js-question-1");
+            var question2 = document.querySelector(".js-question-2");
+            var question5 = document.querySelector(".js-question-5");
+
+            function clearSelectedRadioButtons() {
+                var selectedRadioButtons = document.querySelectorAll('input[type=radio]:checked');
+                for (var i = 0; i < selectedRadioButtons.length; i++) {
+                    selectedRadioButtons[i].checked = false;
+                }
+            }
+            // xóa các nút đã chọn khi đổi option
+
+            switch (selectValue) {
+                case "opt-1":
+                    question1.style.display = "block";
+                    question2.style.display = "none";
+                    question5.style.display = "none";
+                    clearSelectedRadioButtons();
+                    break;
+                case "opt-2":
+                case "opt-3":
+                case "opt-4":
+                    question1.style.display = "none";
+                    question2.style.display = "block";
+                    question5.style.display = "none";
+                    clearSelectedRadioButtons();
+                    break;
+                case "opt-5":
+                    question1.style.display = "none";
+                    question2.style.display = "none";
+                    question5.style.display = "block";
+                    clearSelectedRadioButtons();
+                    break;
+                default:
+                    question1.style.display = "none";
+                    question2.style.display = "none";
+                    question5.style.display = "none";
+
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
