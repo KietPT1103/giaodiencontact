@@ -1,14 +1,14 @@
 @media (min-width: 1200px) {
-    .main-container {
+    .contact-container {
         max-width: 1400px !important;
         padding: 0 !important;
     }
 
-    #content{
+    #contact-content{
         width: 1032px;
     }
 
-    #content .tittle{
+    #contact-content .tittle{
         display: flex;
     }
 }
@@ -16,7 +16,7 @@
 /* Ipad */
 
 @media (min-width: 741px) and (max-width: 1199px){
-    #content{
+    #contact-content{
         width: 750px;
         padding: 24px;
         margin: 9px;
@@ -25,26 +25,26 @@
 
 /* Mobile */
 @media (max-width: 740px) {
-    #content .tittle {
+    #contact-content .tittle {
         font-size: 24px !important;
         letter-spacing: 1px !important;
         line-height: 40px;
     }
 
-    #content .desc{
+    #contact-content .desc{
         margin: 39px 0;
     }
 
-    .main-container {
+    .contact-container {
         padding: 0 24px;
     }
 
-    #content {
+    #contact-content {
         margin-top: 20px;
         width: auto;
     }
 
-    #main-navigation {
+    #contact-navigation {
         display: none;
     }
 

@@ -16,7 +16,11 @@ body {
     letter-spacing: 0.04em !important;
 }
 
-#main .main-container {
+#contact{
+    margin-top: 6.875rem;
+}
+
+#contact .contact-container {
     position: relative;
     margin-left: auto;
     margin-right: auto;
@@ -26,31 +30,31 @@ body {
     flex-direction: column;
 }
 
-#content {
+#contact-content {
     position: relative;
     margin-top: 100px;
     margin-left: auto;
     margin-right: auto;
 }
 
-#content .tittle {
+#contact-content .tittle {
     line-height: 58px;
     font-size: 39px;
 }
 
-#content .tittle-blue {
+#contact-content .tittle-blue {
     color: #0000F6;
     letter-spacing: -1px;
     font-weight: 700;
 }
 
-#content .desc {
+#contact-content .desc {
     margin: 84px 0;
     font-size: 16px;
     font-weight: 700;
 }
 
-#content .desc p {
+#contact-content .desc p {
     margin-bottom: 10px;
     letter-spacing: 0.1px;
 
